@@ -7,47 +7,34 @@
     font-family: Ubuntu, sans-serif;
 }
 
-img{
-  max-width: 100%;
-}
 body{
     background-color: hsl(217, 100%, 97%);
-    display: flex;
-    align-items: center;
-    justify-content: center !important;
-    font-size: 16px;
-    min-height: 100vh;
-    width: 1100px;
-    margin: auto;
-
 }
-
-.container{
-  background-color: white;
-  width: 100%;
-
-}
-
-/*sidebar styling*/
 .sidebar{
   display: flex;
-  margin: 2rem;
-  
+  background-color: white;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(47,18,18, 0.101);
+  width: 900px;
+  height: 590px;
 }
 
 .step{
   display: flex;
-  gap: 1.5rem;
 
 }
 
 .sidebar .form-steps{
     background-image: url("/assets/images/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
-    height: 600px;
-    width: 400px;
     padding: 2rem 2rem;
-
+    height: 555px;
+    width: 270px;
+    margin: 1rem;
+    border-radius: 10px;
 
 }
   .step .circle{
@@ -75,6 +62,7 @@ body{
   color: white;
   text-transform: uppercase;
   line-height: 1.5;
+
 }
 
 .step-content span{
@@ -88,13 +76,11 @@ body{
 
 /*section*/
  .forms{
-  width: 900px;
-  height: 100%;
   font-size:16px;
  }
  /*form-one styling*/
  .form-one{
-    margin: 4rem;
+    margin: 2rem;
     padding-right: 2rem;
     
     
@@ -105,7 +91,6 @@ body{
   font-weight: 800;
   font-size: 34px;
   margin-bottom:2rem;
-  margin-top: 2rem;
 }
 
 .form-one p{
@@ -121,7 +106,7 @@ body{
 }
 
 .form-one input{
-  width: 85%;
+  width: 100%;
   height: 3rem;
   border-radius: 5px 5px;
   border-color: hsl(229, 24%, 87%);
@@ -514,47 +499,4 @@ body{
   align-items: center;
   line-height: 0;
 }
-@media screen and (max-width: 768px){
-  body{
-    position: relative;
-  }
-
-  .sidebar .form-steps{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-image: url(/assets/images/bg-sidebar-mobile.svg);
-    flex-direction: row;
-    height: 300px;
-    background-size: cover;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    z-index: -1;
-  } 
-
-  .step-content{
-    display: none
-  }
-
-   .step{
-    display: inline-block;
-  }
-
-  .forms{
-    position: absolute;
-    top: 20%;
-    max-width: 375px;
-    background-color: white;
-  }
-}
-
-
-
-
-
-/*footer styling*/
-.attribution{
-  display: none
-}
+ 
