@@ -78,10 +78,13 @@ body{
  .forms{
   font-size:16px;
  }
+
+
  /*form-one styling*/
  .form-one{
     margin: 2rem;
     padding-right: 2rem;
+    display: none;
     
     
 }
@@ -129,7 +132,8 @@ body{
 
 .forms .form-two{
   padding: 4rem;
-  display: none;
+  display: block;
+  /* display: none; */
 }
 
 .form-two h1{
@@ -550,6 +554,7 @@ body{
     margin-left: 100px;
     margin-top: 1rem;
   }
+
 
 .forms .btn{
   background-color: white;

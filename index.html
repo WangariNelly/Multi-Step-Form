@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css"/>
@@ -23,7 +23,7 @@
       <span>Step 1</span><b>Your info</b>
     </div>
   </div>
-  <div class="step">
+  <div class="step ">
     <div class="circle">2</div>
     <div class="step-content">
       <span>Step 2</span><b>Select plan</b>
@@ -47,15 +47,15 @@
 
   <!-- Step 1 start -->
 <section class="forms">
-  <div class=" Form-all form-one">
+  <div class=" Form-all form-one active">
   <h1>Personal info</h1>
   <p> Please provide your name, email address, and phone number.</p>
   
-  <label>Name <br></br><input type="text" placeholder=" e.g. Stephen King" required></label><br></br>
-  <label> Email Address <br></br><input type="email" placeholder=" e.g. stephenking@lorem.com" required></label><br></br>
-  <label>Phone Number <br></br><input type="tel" placeholder=" e.g. +1 234 567 890" required></label><br></br>
-   <div class="btn">
-    <button class="nextBtn">Next Step</button>
+  <label>Name <br></br><input type="text" placeholder=" e.g. Stephen King" required=""></label><br></br>
+  <label> Email Address <br></br><input type="email" placeholder=" e.g. stephenking@lorem.com" required=""></label><br></br>
+  <label>Phone Number <br></br><input type="tel" placeholder=" e.g. +1 234 567 890" required=""></label><br></br>
+   <div id="Next" class="btn">
+    <button type="button" class="nextBtn">Next Step</button>
    </div>
  
     </div>
@@ -94,7 +94,7 @@
  
 </div>
 <div class="btn">
-  <button class="previousBtn" id="previous">Go Back</button> <button class="nextBtn" id="next">Next Step</button>
+  <button type="button" class="previousBtn" id="previous">Go Back</button> <button type="button" class="nextBtn" id="next">Next Step</button>
 </div>
 </div>
   <!-- Step 2 end -->
@@ -139,7 +139,7 @@
     </article>
   </div>
   <div class="btn">
-        <button class="previousBtn">Go Back</button><button class="nextBtn">Next Step</button>
+        <button type="button" class="previousBtn">Go Back</button><button type="button" class="nextBtn">Next Step</button>
       </div>
 </div>
   <!-- Step 3 end -->
@@ -156,8 +156,8 @@
 
   <div class="btn">
   
-    <button class="previousBtn" >Go Back</button>
-    <button class="nextBtn">Confirm</button>
+    <button type="button" class="previousBtn" >Go Back</button>
+    <button class="submit">Confirm</button>
   </div>
 </div>
   <!-- Step 4 end -->
