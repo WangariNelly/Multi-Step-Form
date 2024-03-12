@@ -8,7 +8,7 @@
   
   
     let currentStep = 0;
-  
+//   For visibility.
     function showStep(stepIndex) {
       forms.forEach((form, index) => {
         if (index === stepIndex) {
@@ -51,40 +51,15 @@
   
     // Show the initial step
     showStep(currentStep);
-//   });
+   });
   
 
 //Dyanamically updates the four-four of the pages.
   
-    function updateSummary() {
-      const summaryContent = document.createElement('div');
-      summaryContent.innerHTML = `
-        <p>Subscription: ${document.querySelector('input[name="plan"]:checked').parentNode.textContent}</p>
-        <p>Add-ons:</p>
-        <ul>
-          ${document.querySelectorAll('input[name="addon"]:checked').length > 0 ?
-            Array.from(document.querySelectorAll('input[name="addon"]:checked')).map(addon => `<li>${addon.parentNode.textContent}</li>`).join('') :
-            '<li>No add-ons selected</li>'}
-        </ul>
-      `;
-      summarySection.innerHTML = '';
-      summarySection.appendChild(summaryContent);
-    }
-  
-    nextBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (currentStep === forms.length - 2) {
-          updateSummary();
-        }
-        goToNextStep();
-      });
-    });
-  
-    previousBtns.forEach(btn => {
-      btn.addEventListener('click', goToPreviousStep);
-    });
-  
-    // Show the initial step
-    showStep(currentStep);
-});
+function updateSummary() {
+    const plan = document.querySelector('input[name="plan"]:checked').value;
+    const addons = document.querySelectorAll('input[name="addon"]:checked');
+    let addonCost = 0;
+   
+};
   

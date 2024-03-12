@@ -272,7 +272,7 @@ body{
   }
   .toggle .monthly{
     font-weight: 700;
-  }
+  } 
 
   .form-two .btn{
     display: grid;
@@ -569,11 +569,6 @@ body{
   padding: 1rem;
 }
 
-}
-
-/* Mobile design */
-
-@media (max-width: 395px) {
   .sidebar {
       width: auto;
       margin: 3% auto;
@@ -601,6 +596,7 @@ body{
   .form-one button,
   .form-two .previousBtn,
   .form-two .nextBtn {
-      width: 100%;
+      width: 50%;
   }
+
 }
