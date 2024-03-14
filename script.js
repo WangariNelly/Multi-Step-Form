@@ -1,4 +1,4 @@
-
+// document content loaded to make sure all is ready befor loading the page.
  document.addEventListener('DOMContentLoaded', function() {
     const formSteps = document.querySelectorAll('.form-steps .step');
     const forms = document.querySelectorAll('.Form-all');
@@ -63,3 +63,15 @@ function updateSummary() {
    
 };
   
+document.getElementById('toggle').addEventListener('click', function() {
+  var yearlyForm = document.getElementById('yearlyForm');
+  var monthlyForm = document.getElementById('monthlyForm');
+
+  if (monthlyForm.checked) {
+    monthlyForm.style.display = 'block';
+    yearlyForm.style.display = 'none';
+  } else {
+    monthlyForm.style.display = 'none';
+    yearlyForm.style.display = 'block';
+  }
+});

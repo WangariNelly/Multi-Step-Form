@@ -133,7 +133,6 @@ body{
 .forms .form-two{
   padding: 4rem;
   display: block;
-  /* display: none; */
 }
 
 .form-two h1{
@@ -258,9 +257,7 @@ body{
     transform: translateX(30px);
     
     /* svg pattern*/
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230ba038' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-  }
+    background-color: #ffffff;}
   
   /* Rounded sliders */
   .slider.round {
@@ -312,6 +309,198 @@ body{
       margin-left: 0px;
       margin-top: 10rem;
   }
+
+  /* FORM 2B styling */
+
+  .forms .form-twoB{
+    padding: 4rem;
+    display: block;
+  }
+  
+  .form-twoB h1{
+  
+    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 2rem;
+
+  }
+  
+  .form-twoB #p{
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 2rem;
+  }
+  
+
+  .form-twoB #price{
+    color: hsl(231, 11%, 63%);
+  }
+  .form-twoB #child{
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+  
+  }
+  .forms .form-twoB .Article{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1rem;
+  }
+  
+  .forms .form-twoB .Article article{
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 20px 20px;
+    height: 10rem;
+    width: 10rem;
+  
+  }
+  
+  .forms .form-twoB .Article article:hover{
+    border: 2px solid hsl(243, 100%, 62%);
+    cursor: pointer;
+    border-radius: 20px 20px;
+    height: 10rem;
+    width: 10rem;
+  
+  }
+  
+  
+  .forms .form-twoB .Article h3{
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+  
+  }
+  .forms .form-twoB .Article img{
+      width: 40px;
+      padding-top: 1.5rem;
+      padding-left: 1rem;
+      padding-bottom:1.5rem
+      
+  }
+  
+  .forms .form-twoB .Article p{
+    padding-left: 0.5rem;
+  }
+   
+  
+  
+  
+  .form-twoB .toggle{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 6rem;
+      margin-top: 2rem;
+      
+  }
+  
+  .form-twoB .toggle label{
+      padding: 20px
+  }
+  .form-twoB .switch {
+      position: relative;
+      display: inline-block;
+      width: 70px;
+      height: 20px;
+    }
+    
+    /* Hide default HTML checkbox */
+    .form-twoB .switch input {display:none;}
+    
+    /* The slider */
+    .form-twoB .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: hsl(213, 96%, 18%);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .form-twoB .slider:before {
+      position: absolute;
+      content: "";
+      height: 40px;
+      width: 30px;
+      left: 8px;
+      bottom: 0px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      
+      /* svg pattern */
+    background-color: #ffffff;
+    }
+    
+   .form-twoB input:checked + .slider {
+      background-color:  hsl(213, 96%, 18%);
+    }
+    
+    .form-twoB input:focus + .slider {
+      box-shadow: 0 0 1px  hsl(213, 96%, 18%);;
+    }
+    
+    .form-twoB input:checked + .slider:before {
+      -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+      transform: translateX(30px);
+      
+      /* svg pattern*/
+      background-color: #ffffff;}
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 50px;
+    }
+    
+    .slider.round:before {
+      border-radius: 100%;
+    }
+    .toggle .monthly{
+      font-weight: 700;
+    } 
+  
+    .form-twoB .btn{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem
+  
+    }
+  
+    .form-twoB .previousBtn{
+      background-color: white;
+      display: flex;
+      width: 12rem;
+      padding: 0.8rem 2rem;
+      font-size: 16px;
+      font-weight: 800;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      margin-left: 0px;
+      margin-top: 10rem;
+    }
+  
+    .form-twoB .previousBtn:hover{
+      cursor: pointer;
+      color:  hsl(213, 96%, 18%);
+    }
+  
+    .form-twoB .nextBtn{
+      background-color: hsl(213, 96%, 18%);
+        width: 12rem;
+        padding: 0.8rem 2rem;
+        font-size: 16px;
+        font-weight: 800;
+        border: 3px solid  hsl(213, 96%, 18%);
+        border-radius: 5px;
+        color:#ffffff;
+        margin-left: 0px;
+        margin-top: 10rem;
+    }
 /*form-three styling*/
 .forms .form-three{
   display: none;
@@ -428,6 +617,23 @@ body{
   padding-bottom: 2rem;
 }
 
+.form-four .summary{
+  width: 100%;
+}
+.form-four input{
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px 5px;
+  border-color: white;
+  padding: 2rem;
+
+}
+.form-four span{
+  display: inline-block;
+  margin-left: 20rem;
+  color:  hsl(243, 100%, 62%);
+}
+
 .form-four .btn{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -504,7 +710,8 @@ body{
   line-height: 0;
 }
 
-@media screen and (max-width: 375px){
+@media only screen and (max-width: 375px){
+  
   body{
 
     position: relative;
@@ -538,14 +745,14 @@ body{
   .forms{
     position: absolute;
     top: 20%;
-    max-width: 375px;
-    padding: 2rem; 
+    max-width: 500px;
+    padding: 1rem; 
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 20px 20px 20px rgba(47,18,18, 0.101);
     background-color: white;
     margin-right: 1rem;
-    height: 550px;
+    height: 700px;
     margin-left: 3rem;
     margin-top: 0;
   }
@@ -558,7 +765,7 @@ body{
 
 .forms .btn{
   background-color: white;
-  margin-top: 3rem;
+  margin-top: 15rem;
   width: 25rem;
   height: 5rem;
   margin-left: 0;
@@ -573,10 +780,10 @@ body{
       width: auto;
       margin: 3% auto;
   }
-  .form-steps {
+ .form-steps {
       width: auto;
       margin: 1rem auto;
-  }
+  } 
   .form-steps,
   .step,
   .step-content {
@@ -587,16 +794,75 @@ body{
   .step-content {
       margin-top: 1rem;
   }
-  .form-one,
+
+
+   .form-one,
   .form-two,
-  .form-three {
-      margin: 2rem 0;
+  .form-three
+  .form-four 
+ .form-five{
+      margin: 1rem 0;
       padding: 0 1rem;
-  }
+  } 
   .form-one button,
   .form-two .previousBtn,
   .form-two .nextBtn {
       width: 50%;
   }
 
+ .forms .form-two .Article{
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  gap: 1rem;top: 0;
+}
+
+.form .form-two .h1{
+  padding-top: 0;
+}
+
+.forms .form-two .Article article{
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px 10px;
+  height: 5rem;
+  width: 20rem;
+
+}
+
+
+.forms .form-two .Article article:hover{
+  border: 2px solid hsl(243, 100%, 62%);
+  cursor: pointer;
+  border-radius: 20px 20px;
+  height: 5rem;
+  width: 20rem;
+}
+
+.forms .form-two .Article h3,
+.forms .form-two .Article p{
+  padding-left: 4rem;
+  padding-top: 0;
+
+}
+.forms .form-two .Article img{
+    width: 40px;
+    padding-left: 1rem;
+    padding-bottom:2.5rem
+    
+}
+form-two button{
+  margin-left: 80px;
+  margin-top: 0rem;
+  height: 4rem;
+  width: 5rem;
+}
+ 
+
+.form-five p{
+  color: hsl(231, 11%, 63%);
+  padding-bottom: 2rem;
+  font-size: 16px;
+  align-items: center;
+  line-height: 2rem;
+  text-wrap: wrap;
+}
 }

@@ -64,7 +64,7 @@
   <!-- Step 1 end -->
 
   <!-- Step 2 start -->
- <div class="Form-all form-two">
+ <div class="Form-all form-two" id="monthlyForm" style="display: none;">
   <h1>Select your plan</h1>
    <p> You have the option of monthly or yearly billing.</p>
    <div class="Article">
@@ -86,7 +86,49 @@
     <p>$15/mo</p>
    </article>
   </div>
-<div class="toggle">
+<div id="toggle" class="toggle">
+ <label class="monthly">Monthly </label> 
+ <label class="switch"><input type="checkbox">
+<span class="slider round"></span></label>
+ <label class="yearly"> Yearly</label>
+ 
+</div>
+<div class="btn">
+  <button type="button" class="previousBtn" id="previous">Go Back</button> <button type="button" class="nextBtn" id="next">Next Step</button>
+</div>
+</div>
+
+
+
+<!--form 2 yearly-->
+
+<div class="Form-all form-twoB" id="yearlyForm" style="display: none;">
+  <h1>Select your plan</h1>
+   <p id="p"> You have the option of monthly or yearly billing.</p>
+   <div class="Article">
+   <article>
+    <img src="/assets/images/icon-arcade.svg"/>
+    <h3>Arcade</h3>
+    <p id="price">$90/yr</p>
+    <p id="child">2 months free</p>
+   </article>
+
+   <article>
+    <img src="/assets/images/icon-advanced.svg"/>
+    <h3>Advanced</h3>
+    <p id="price">$120/yr</p>
+    <p id="child">2 months free</p>
+    
+   </article>
+    
+   <article>
+    <img src="/assets/images/icon-pro.svg"/>
+    <h3>Pro</h3>
+    <p id="price">$150/yr</p>
+    <p id="child">2 months free</p>
+   </article>
+  </div>
+<div id="toggle" class="toggle">
  <label class="monthly">Monthly </label> 
  <label class="switch"><input type="checkbox">
 <span class="slider round"></span></label>
@@ -98,6 +140,8 @@
 </div>
 </div>
   <!-- Step 2 end -->
+
+
 
   <!-- Step 3 start -->
 <div class="Form-all form-three">
@@ -151,9 +195,13 @@
  <p> Double-check everything looks OK before confirming.</p>
 
   <!-- Dynamically add subscription and add-on selections here -->
+<div class="summary">
+  
+<label>Plan <span>$/mo</span><input></label>
+<label>Adds-on <span> $/mo</span><input></label>
 
-  Total (per month/year)
-
+  <label>Total (per month/year)<input></label>
+</div>
   <div class="btn">
   
     <button type="button" class="previousBtn" >Go Back</button>
